@@ -8,5 +8,9 @@
 
 4. git commit -m "message" > Commit staged changes with a message
 
+5. git log > Show commit history
 
+6. git remote add origin <url> > Add a remote repository
+
+7. git push origin <branch> > Push changes to the remote repository on the specified branch
 
