@@ -1,0 +1,35 @@
+[DEBUG] - [13-07-2025 12:48:45] [main] [org.testng.TestNG] - suiteXmlPath: "C:\Users\Options\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml"
+[INFO] - [13-07-2025 12:48:46] [main] [com.swaglabs.Listeners.TestNGListeners] - TestNG Execution Started
+[INFO] - [13-07-2025 12:48:46] [main] [com.swaglabs.utils.PropertiesUtil] - Loading Properties File Data
+[INFO] - [13-07-2025 12:48:46] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  C:\Users\Options\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+[DEBUG] - [13-07-2025 12:48:46] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['information-form']['first-name']
+[INFO] - [13-07-2025 12:48:46] [main] [com.swaglabs.utils.JsonUtil] - json path: 'information-form.first-name' in the file: test-data.json has value: testFirst_
+[DEBUG] - [13-07-2025 12:48:46] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['information-form']['last-name']
+[INFO] - [13-07-2025 12:48:46] [main] [com.swaglabs.utils.JsonUtil] - json path: 'information-form.last-name' in the file: test-data.json has value: testSecond_
+[INFO] - [13-07-2025 12:48:49] [main] [com.swaglabs.utils.BrowserActionsUtil] - Navigated to URL: https://www.saucedemo.com/v1/
+[DEBUG] - [13-07-2025 12:48:49] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['login-credentials']['username']
+[INFO] - [13-07-2025 12:48:49] [main] [com.swaglabs.utils.JsonUtil] - json path: 'login-credentials.username' in the file: test-data.json has value: standard_user
+[INFO] - [13-07-2025 12:48:49] [main] [com.swaglabs.utils.WaitsUtil] - Waiting for element to be visible: By.id: user-name
+[INFO] - [13-07-2025 12:48:49] [main] [com.swaglabs.utils.WaitsUtil] - Waiting for element to be present: By.id: user-name
+[INFO] - [13-07-2025 12:48:49] [main] [com.swaglabs.utils.ElementActionsUtil] - ScrollingUtil to element: By.id: user-name
+[INFO] - [13-07-2025 12:48:49] [main] [com.swaglabs.utils.ElementActionsUtil] - Finding element: By.id: user-name
+[INFO] - [13-07-2025 12:48:49] [main] [com.swaglabs.utils.ElementActionsUtil] - Finding element: By.id: user-name
+[INFO] - [13-07-2025 12:48:49] [main] [com.swaglabs.utils.ElementActionsUtil] - Sent data: standard_user to element: By.id: user-name
+[DEBUG] - [13-07-2025 12:48:49] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['login-credentials']['password']
+[INFO] - [13-07-2025 12:48:49] [main] [com.swaglabs.utils.JsonUtil] - json path: 'login-credentials.password' in the file: test-data.json has value: secret_sauce
+[INFO] - [13-07-2025 12:48:49] [main] [com.swaglabs.utils.WaitsUtil] - Waiting for element to be visible: By.id: password
+[INFO] - [13-07-2025 12:48:49] [main] [com.swaglabs.utils.WaitsUtil] - Waiting for element to be present: By.id: password
+[INFO] - [13-07-2025 12:48:49] [main] [com.swaglabs.utils.ElementActionsUtil] - ScrollingUtil to element: By.id: password
+[INFO] - [13-07-2025 12:48:49] [main] [com.swaglabs.utils.ElementActionsUtil] - Finding element: By.id: password
+[INFO] - [13-07-2025 12:48:49] [main] [com.swaglabs.utils.ElementActionsUtil] - Finding element: By.id: password
+[INFO] - [13-07-2025 12:48:49] [main] [com.swaglabs.utils.ElementActionsUtil] - Sent data: secret_sauce to element: By.id: password
+[INFO] - [13-07-2025 12:48:49] [main] [com.swaglabs.utils.WaitsUtil] - Waiting for element to be clickable: By.id: login-button
+[INFO] - [13-07-2025 12:48:49] [main] [com.swaglabs.utils.WaitsUtil] - Waiting for element to be visible: By.id: login-button
+[INFO] - [13-07-2025 12:48:49] [main] [com.swaglabs.utils.WaitsUtil] - Waiting for element to be present: By.id: login-button
+[INFO] - [13-07-2025 12:48:49] [main] [com.swaglabs.utils.ElementActionsUtil] - ScrollingUtil to element: By.id: login-button
+[INFO] - [13-07-2025 12:48:49] [main] [com.swaglabs.utils.ElementActionsUtil] - Finding element: By.id: login-button
+[INFO] - [13-07-2025 12:48:49] [main] [com.swaglabs.utils.ElementActionsUtil] - Finding element: By.id: login-button
+[INFO] - [13-07-2025 12:48:50] [main] [com.swaglabs.utils.ElementActionsUtil] - Clicked on element: By.id: login-button
+[INFO] - [13-07-2025 12:48:50] [main] [com.swaglabs.utils.BrowserActionsUtil] - Current URL: https://www.saucedemo.com/v1/inventory.html
