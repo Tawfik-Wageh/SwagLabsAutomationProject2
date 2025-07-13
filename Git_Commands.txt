@@ -1,8 +1,12 @@
 
 1. git init > Initialize a new Git repository
 
-2. git add <file> > Stage changes for commit
+2. git status > Show the status of the working directory and staging area
+
+3. git add <file> > Stage changes for commit
    git add . > Stage all changes in the current directory
 
-3. git commit -m "message" > Commit staged changes with a message
+4. git commit -m "message" > Commit staged changes with a message
+
+
 
