@@ -1,7 +1,7 @@
 package com.swaglabs.pages;
 
 import com.swaglabs.drivers.GUIDriver;
-import com.swaglabs.utils.CustomSoftAssertionUtil;
+import com.swaglabs.Utils.CustomSoftAssertionUtil;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
@@ -27,19 +27,19 @@ public class InformationPage {
 
     }
 
-    //actions :
+    // Actions (Methods) :
 
     @Step("filling information form with first name: {fName}, last name: {lName}, zip code: {zip}")
     public InformationPage fillingInformationForm(String fName, String lName, String zip) {
-        driver.elementActions().type( firstName, fName);
-        driver.elementActions().type( lastName, lName);
-        driver.elementActions().type( zipCode, zip);
+        driver.elementActions().sendDataToElement( firstName, fName);
+        driver.elementActions().sendDataToElement( lastName, lName);
+        driver.elementActions().sendDataToElement( zipCode, zip);
         return this;
     }
 
     @Step("Clicking on continue button")
     public OverviewPage clickingOnContinueButton() {
-        driver.elementActions().click( continueButton);
+        driver.elementActions().clickingOnElement( continueButton);
         return new OverviewPage(driver);
     }
 

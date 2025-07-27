@@ -1,12 +1,12 @@
 package com.swaglabs.Listeners;
 
 import com.swaglabs.drivers.GUIDriver;
-import com.swaglabs.utils.*;
+import com.swaglabs.Utils.*;
 import org.testng.*;
 
 import java.io.File;
 
-import static com.swaglabs.utils.PropertiesUtil.loadProperties;
+import static com.swaglabs.Utils.PropertiesUtil.loadProperties;
 
 
 public class TestNGListeners implements IExecutionListener  , ITestListener, IInvokedMethodListener {

@@ -1,7 +1,7 @@
 package com.swaglabs.pages;
 
 import com.swaglabs.drivers.GUIDriver;
-import com.swaglabs.utils.CustomSoftAssertionUtil;
+import com.swaglabs.Utils.CustomSoftAssertionUtil;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
@@ -24,21 +24,21 @@ public class CartPage {
 
     }
 
-    //actions :
+    //actions (Methods) :
 
     @Step("Get item name")
     private String getItemName() {
-        return driver.elementActions().getText( itemName);
+        return driver.elementActions().getTextFromElement( itemName);
     }
 
     @Step("Get item price")
     private String getItemPrice() {
-        return driver.elementActions().getText( itemPrice);
+        return driver.elementActions().getTextFromElement( itemPrice);
     }
 
     @Step("Click on checkout button")
     public InformationPage clickOnCheckoutButton() {
-        driver.elementActions().click( checkoutButton);
+        driver.elementActions().clickingOnElement( checkoutButton);
         return new InformationPage(driver);
     }
 

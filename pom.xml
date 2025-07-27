@@ -19,13 +19,13 @@
         <Log4jApiVersion>2.25.0</Log4jApiVersion>
         <GsonVersion>2.13.1</GsonVersion>
         <JavaFaker>1.0.2</JavaFaker>
-        <Allure.Version>2.29.1</Allure.Version>
+        <Allure.Version>2.24.0</Allure.Version>
         <CommonIO>2.19.0</CommonIO>
         <Aspectj.Version>1.9.24</Aspectj.Version>
         <Surefire>3.1.2</Surefire>
         <shutterBugVersion>1.6</shutterBugVersion>
-        <AllureMaven>2.15.2</AllureMaven>
-        <AllureApi.Version>2.34.1</AllureApi.Version>
+        <AllureMaven>2.12.0</AllureMaven>
+        <AllureApi.Version>2.24.0</AllureApi.Version>
         <JsonPath.Version>2.9.0</JsonPath.Version>
         <JsonSimple.Version>1.1.1</JsonSimple.Version>
 

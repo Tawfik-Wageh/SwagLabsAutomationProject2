@@ -18,11 +18,11 @@ public class OverviewPage {
         this.driver = driver;
     }
 
-    // Actions :
+    // Actions (Methods) :
 
     @Step("Click on Finish button")
     public ConfirmationPage clickOnFinishButton() {
-        driver.elementActions().click( finishButton);
+        driver.elementActions().clickingOnElement( finishButton);
         return new ConfirmationPage(driver);
     }
 

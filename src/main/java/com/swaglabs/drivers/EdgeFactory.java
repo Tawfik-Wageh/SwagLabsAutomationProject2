@@ -1,6 +1,6 @@
 package com.swaglabs.drivers;
 
-import com.swaglabs.utils.PropertiesUtil;
+import com.swaglabs.Utils.PropertiesUtil;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;

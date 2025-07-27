@@ -1,7 +1,7 @@
 package com.swaglabs.pages;
 
 import com.swaglabs.drivers.GUIDriver;
-import com.swaglabs.utils.*;
+import com.swaglabs.Utils.*;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.locators.RelativeLocator;
@@ -23,7 +23,7 @@ public class HomePage {
 
     private final By cartIcon = By.cssSelector("[data-icon='shopping-cart']");
 
-    //Actions :
+    //Actions (Methods) :
 
     @Step("Navigate to Home Page")
     public HomePage navigateToHomePage() {
@@ -41,7 +41,7 @@ public class HomePage {
         By addToCartButton = RelativeLocator.with(By.tagName("button"))
                 .below(By.xpath("//div[.='" + itemName + "']" ));
 
-        driver.elementActions().click( addToCartButton);
+        driver.elementActions().clickingOnElement( addToCartButton);
 
         return this;
     }
@@ -49,7 +49,7 @@ public class HomePage {
     @Step("Click on cart icon")
     public CartPage clickOnCartIcon() {
         LogsUtil.info("Clicking on cart icon");
-        driver.elementActions().click( cartIcon);
+        driver.elementActions().clickingOnElement( cartIcon);
         return new CartPage(driver);
     }
 
@@ -58,10 +58,10 @@ public class HomePage {
 
     @Step("Assert item added to cart")
     public HomePage assertItemAddedToCart(String itemName) {
-        By addtoCartButton = RelativeLocator.with(By.tagName("button"))
+        By addToCartButton = RelativeLocator.with(By.tagName("button"))
                 .below(By.xpath("//div[.='" + itemName + "']" ));
 
-        String actualText =driver.elementActions().getText( addtoCartButton);
+        String actualText =driver.elementActions().getTextFromElement(addToCartButton);
         LogsUtil.info("Actual text: " + actualText);
         driver.validations().validateEquals(actualText, "REMOVE" , "Item was not added to cart" );
         LogsUtil.info("Item " + itemName + " was successfully added to cart");

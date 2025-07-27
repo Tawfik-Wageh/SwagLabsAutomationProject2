@@ -19,11 +19,11 @@ public class ConfirmationPage {
 
     private final By confirmationMessage = By.className("complete-header");
 
-    //actions :
+    //Actions (Methods) :
 
     @Step("Get confirmation message")
     public String getConfirmationMessage() {
-        return driver.elementActions().getText(confirmationMessage);
+        return driver.elementActions().getTextFromElement(confirmationMessage);
     }
 
     // validations (assertions) :

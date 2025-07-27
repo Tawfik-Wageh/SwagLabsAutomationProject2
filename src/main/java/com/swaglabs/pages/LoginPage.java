@@ -2,11 +2,11 @@ package com.swaglabs.pages;
 
 
 import com.swaglabs.drivers.GUIDriver;
-import com.swaglabs.utils.CustomSoftAssertionUtil;
+import com.swaglabs.Utils.CustomSoftAssertionUtil;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
-import static com.swaglabs.utils.PropertiesUtil.getPropertyValue;
+import static com.swaglabs.Utils.PropertiesUtil.getPropertyValue;
 
 
 public class LoginPage {
@@ -28,7 +28,7 @@ public class LoginPage {
     }
 
 
-    // Actions :
+    // Actions (Methods) :
 
     @Step("Navigate to Login Page")
     public void navigateToLoginPage() {
@@ -38,26 +38,26 @@ public class LoginPage {
 
     @Step("Enter Username: {usernameText}")
     public LoginPage enterUsername(String usernameText) {
-        driver.elementActions().type(username, usernameText);
+        driver.elementActions().sendDataToElement(username, usernameText);
         return this;
     }
 
     @Step("Enter Password: {passwordText}")
     public LoginPage enterPassword(String passwordText) {
-        driver.elementActions().type( password, passwordText);
+        driver.elementActions().sendDataToElement( password, passwordText);
         return this;
     }
 
     @Step("Click on Login Button")
     public LoginPage clickOnLoginButton() {
-        driver.elementActions().click( loginButton);
+        driver.elementActions().clickingOnElement( loginButton);
         return this;
     }
 
     @Step("Get Error Message")
     public String getErrorMessage() {
 
-        return driver.elementActions().getText( errorMessage);
+        return driver.elementActions().getTextFromElement( errorMessage);
     }
 
 

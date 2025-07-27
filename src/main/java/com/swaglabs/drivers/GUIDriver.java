@@ -1,10 +1,10 @@
 package com.swaglabs.drivers;
 
-import com.swaglabs.utils.BrowserActionsUtil;
-import com.swaglabs.utils.ElementActionsUtil;
-import com.swaglabs.utils.LogsUtil;
+import com.swaglabs.Utils.BrowserActionsUtil;
+import com.swaglabs.Utils.ElementActionsUtil;
+import com.swaglabs.Utils.LogsUtil;
 
-import com.swaglabs.utils.ValidationsUtil;
+import com.swaglabs.Utils.ValidationsUtil;
 import org.openqa.selenium.WebDriver;
 
 import static org.testng.Assert.fail;
