@@ -18,7 +18,7 @@ public class WaitsUtil {
     }
 
 
-    //waitForElementPresent
+
     public  WebElement waitForElementPresent( By locator ) {
         LogsUtil.info("Waiting for element to be present: " + locator);
         return new WebDriverWait(driver, Duration.ofSeconds(10))
@@ -27,7 +27,7 @@ public class WaitsUtil {
 
     }
 
-    //waitForElementVisible
+
     public WebElement waitForElementVisible( By locator) {
         LogsUtil.info("Waiting for element to be visible: " + locator);
         return new WebDriverWait(driver, Duration.ofSeconds(10))
@@ -37,7 +37,7 @@ public class WaitsUtil {
                 });
     }
 
-    //waitForElementClickable
+
     public WebElement waitForElementClickable( By locator) {
         LogsUtil.info("Waiting for element to be clickable: " + locator);
         return new WebDriverWait(driver, Duration.ofSeconds(10))

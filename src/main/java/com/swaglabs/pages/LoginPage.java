@@ -75,16 +75,16 @@ public class LoginPage {
         return this;
     }
 
-    @Step("Login Successful with Soft Assertion")
-    public LoginPage loginSuccessfulSoftAssert() {
-        assertLoginPageUrl().assertLoginPageTitle();
-        return this;
-    }
-
     @Step("Login Successful")
     public HomePage loginSuccessful() {
         driver.validations().validatePageUrl( getPropertyValue("HOME_URL"));
         return new HomePage(driver);
+    }
+
+    @Step("Login Successful with Soft Assertion")
+    public LoginPage loginSuccessfulSoftAssert() {
+        assertLoginPageUrl().assertLoginPageTitle();
+        return this;
     }
 
     @Step("Login Unsuccessful with Soft Assertion")

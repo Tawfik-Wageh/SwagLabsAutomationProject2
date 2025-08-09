@@ -25,19 +25,12 @@ public class HomePage {
 
     //Actions (Methods) :
 
-    @Step("Navigate to Home Page")
-    public HomePage navigateToHomePage() {
-        driver.browserActions().navigateToUrl( PropertiesUtil.getPropertyValue("HOME_URL"));
-
-        return this;
-    }
-
     @Step("Add specific item to cart")
     public HomePage addSpecificItemToCart(String itemName) {
 
         LogsUtil.info( "Adding  " + itemName + " to cart");
 
-        //Relative locator to find the button below the item name using XPath and Dynamic Locator
+        //Relative locator to find the button below the item name using XPath and Dynamic Locator :
         By addToCartButton = RelativeLocator.with(By.tagName("button"))
                 .below(By.xpath("//div[.='" + itemName + "']" ));
 
