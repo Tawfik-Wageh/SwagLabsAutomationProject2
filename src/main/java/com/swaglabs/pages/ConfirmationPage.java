@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 public class ConfirmationPage {
 
     // Variables
-    private GUIDriver driver;
+    private final GUIDriver driver;
 
     //constructor
     public ConfirmationPage(GUIDriver driver) {

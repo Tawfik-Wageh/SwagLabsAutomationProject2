@@ -5,8 +5,10 @@ import org.openqa.selenium.WebDriver;
 
 public class BrowserActionsUtil {
 
-    private WebDriver driver;
+    // driver Bot
+    private final WebDriver driver;
 
+    // to use BOT Pattern
     public BrowserActionsUtil(WebDriver driver) {
         this.driver = driver;
 

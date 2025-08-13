@@ -70,15 +70,14 @@ public class LoginPage {
     }
 
     @Step("Assert Login Page Title")
-    public LoginPage assertLoginPageTitle() {
+    public void assertLoginPageTitle() {
         CustomSoftAssertionUtil.softAssert.assertEquals(driver.browserActions().getPageTitle(), getPropertyValue("APP_TITLE"), "Login page title is not as expected");
-        return this;
     }
 
     @Step("Login Successful")
-    public HomePage loginSuccessful() {
+    public void loginSuccessful() {
         driver.validations().validatePageUrl( getPropertyValue("HOME_URL"));
-        return new HomePage(driver);
+        new HomePage(driver);
     }
 
     @Step("Login Successful with Soft Assertion")

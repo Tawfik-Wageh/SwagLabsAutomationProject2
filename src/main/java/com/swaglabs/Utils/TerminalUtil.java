@@ -3,6 +3,7 @@ package com.swaglabs.Utils;
 public class TerminalUtil {
 
     // String... command is used to accept a variable number of string arguments
+    // This allows you to pass any number of command-line arguments to the method
     public static void executeCommand(String... command) {
 
         try {

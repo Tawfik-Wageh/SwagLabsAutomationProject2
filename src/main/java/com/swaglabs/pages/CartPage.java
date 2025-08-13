@@ -10,7 +10,7 @@ public class CartPage {
 
     //variables
 
-    private GUIDriver driver;
+    private final GUIDriver driver;
 
     //locators :
 
@@ -45,13 +45,12 @@ public class CartPage {
     //validations (assertions) :
 
     @Step("Assert item details")
-    public CartPage assertItemDetails(String expectedName, String expectedPrice) {
+    public void assertItemDetails(String expectedName, String expectedPrice) {
         String actualItemName = getItemName();
         String actualItemPrice = getItemPrice();
 
         CustomSoftAssertionUtil.softAssert.assertEquals(actualItemName, expectedName, "Item name does not match");
         CustomSoftAssertionUtil.softAssert.assertEquals(actualItemPrice, expectedPrice, "Item price does not match");
-        return this;
     }
 
 

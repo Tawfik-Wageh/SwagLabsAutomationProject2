@@ -19,6 +19,7 @@ public class LogsUtil {
     }
 
     // "String... message" allows passing more than one message as separate arguments
+    // This will concatenate the messages with a space in between
     public static void trace(String... message) {
         logger().trace(String.join(" ", message));
     }

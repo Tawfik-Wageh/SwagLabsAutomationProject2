@@ -26,6 +26,9 @@ public class ChromeFactory extends AbstractDriver implements WebDriverOptionsAbs
         chromeOptions.setExperimentalOption("prefs", ChromePrefs);
         chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         if(!PropertiesUtil.getPropertyValue("EXECUTION_TYPE").equalsIgnoreCase("local")){
+
+            // headless mode means the browser will run in the background without a GUI
+            // this is useful for CI/CD pipelines or when you don't need to see the browser
             chromeOptions.addArguments("--headless");
         }
         return chromeOptions;

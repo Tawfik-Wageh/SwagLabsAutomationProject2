@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 public class InformationPage {
     //variables :
 
-    private GUIDriver driver;
+    private final GUIDriver driver;
 
     //locators :
 
@@ -46,11 +46,10 @@ public class InformationPage {
 
     //validations (assertions) :
     @Step("Assert information page")
-    public InformationPage assertInformationPage(String expectedFirstName, String expectedLastName, String expectedZipCode) {
+    public void assertInformationPage(String expectedFirstName, String expectedLastName, String expectedZipCode) {
         CustomSoftAssertionUtil.softAssert.assertEquals(driver.elementActions().getTextFromInputField( firstName ) , expectedFirstName);
         CustomSoftAssertionUtil.softAssert.assertEquals(driver.elementActions().getTextFromInputField( lastName ) , expectedLastName);
         CustomSoftAssertionUtil.softAssert.assertEquals(driver.elementActions().getTextFromInputField( zipCode ) , expectedZipCode);
-        return this;
     }
 
 }

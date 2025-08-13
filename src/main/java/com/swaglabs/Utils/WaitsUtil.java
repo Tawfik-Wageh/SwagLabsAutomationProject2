@@ -10,7 +10,7 @@ import java.time.Duration;
 
 public class WaitsUtil {
 
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public WaitsUtil(WebDriver driver) {
         this.driver = driver;
@@ -38,11 +38,11 @@ public class WaitsUtil {
     }
 
 
-    public WebElement waitForElementClickable( By locator) {
+    public void waitForElementClickable(By locator) {
         LogsUtil.info("Waiting for element to be clickable: " + locator);
-        return new WebDriverWait(driver, Duration.ofSeconds(10))
+        new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(driver1 -> {
-                    WebElement element = waitForElementVisible( locator);
+                    WebElement element = waitForElementVisible(locator);
                     return element.isEnabled() ? element : null;
                 });
     }

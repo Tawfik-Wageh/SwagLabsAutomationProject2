@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 public class OverviewPage {
 
     // Variables
-    private GUIDriver driver;
+    private final GUIDriver driver;
 
     // Locators :
     private final By finishButton = By.xpath("//a[text()='FINISH']");

@@ -9,13 +9,14 @@ import org.openqa.selenium.WebElement;
 
 public class ElementActionsUtil {
 
-    private WebDriver driver;
-
-    // Waits Bot to handle waits for elements
-    private WaitsUtil waits ;
 
 
+    private final WebDriver driver;
 
+    // Waits Bot
+    private final WaitsUtil waits ;
+
+    // to use BOT Pattern
     public ElementActionsUtil(WebDriver driver) {
         this.driver = driver;
         waits = new WaitsUtil(driver);

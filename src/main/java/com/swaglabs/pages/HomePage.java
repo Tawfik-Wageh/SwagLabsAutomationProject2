@@ -11,7 +11,7 @@ public class HomePage {
 
     //variables:
 
-    private GUIDriver driver;
+    private final GUIDriver driver;
 
     // Constructor
     public HomePage(GUIDriver driver) {
@@ -50,7 +50,7 @@ public class HomePage {
     //validations(assertions) :
 
     @Step("Assert item added to cart")
-    public HomePage assertItemAddedToCart(String itemName) {
+    public void assertItemAddedToCart(String itemName) {
         By addToCartButton = RelativeLocator.with(By.tagName("button"))
                 .below(By.xpath("//div[.='" + itemName + "']" ));
 
@@ -58,7 +58,6 @@ public class HomePage {
         LogsUtil.info("Actual text: " + actualText);
         driver.validations().validateEquals(actualText, "REMOVE" , "Item was not added to cart" );
         LogsUtil.info("Item " + itemName + " was successfully added to cart");
-        return this;
     }
 
 

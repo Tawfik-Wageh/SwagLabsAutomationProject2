@@ -7,12 +7,12 @@ import org.testng.Assert;
 
 public class ValidationsUtil {
 
-    private WebDriver driver;
+    private final WebDriver driver;
 
-    // BrowserActions Bot to handle browser actions
-    private BrowserActionsUtil browserActions;
+    // BrowserActions Bot
+    private final BrowserActionsUtil browserActions;
 
-
+    // to use BOT Pattern
     public ValidationsUtil(WebDriver driver) {
         this.driver = driver;
         browserActions = new BrowserActionsUtil(driver);
