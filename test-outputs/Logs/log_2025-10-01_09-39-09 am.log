@@ -1,0 +1,30 @@
+[DEBUG] - [01-10-2025 09:39:09] [main] [org.testng.TestNG] - suiteXmlPath: "C:\Users\Options\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml"
+[INFO] - [01-10-2025 09:39:10] [main] [com.swaglabs.Listeners.TestNGListeners] - TestNG Execution Started
+[INFO] - [01-10-2025 09:39:10] [main] [com.swaglabs.Utils.PropertiesUtil] - Loading Properties File Data
+[INFO] - [01-10-2025 09:39:10] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  C:\Users\Options\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+[DEBUG] - [01-10-2025 09:39:10] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['information-form']['first-name']
+[INFO] - [01-10-2025 09:39:10] [main] [com.swaglabs.Utils.JsonUtil] - json path: 'information-form.first-name' in the file: test-data.json has value: testFirst_
+[DEBUG] - [01-10-2025 09:39:10] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['information-form']['last-name']
+[INFO] - [01-10-2025 09:39:10] [main] [com.swaglabs.Utils.JsonUtil] - json path: 'information-form.last-name' in the file: test-data.json has value: testSecond_
+[ERROR] - [01-10-2025 09:39:14] [main] [com.swaglabs.Utils.ScreenshotUtil] - Failed to take screenshot: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+[INFO] - [01-10-2025 09:39:14] [main] [com.swaglabs.Utils.AllureUtil] - Logs attached to Allure report 
+[INFO] - [01-10-2025 09:39:14] [main] [com.swaglabs.Listeners.TestNGListeners] - Test Case:  successfulLoginTest  - Skipped
+[ERROR] - [01-10-2025 09:39:14] [main] [com.swaglabs.Utils.ScreenshotUtil] - Failed to take screenshot: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+[INFO] - [01-10-2025 09:39:14] [main] [com.swaglabs.Utils.AllureUtil] - Logs attached to Allure report 
+[INFO] - [01-10-2025 09:39:14] [main] [com.swaglabs.Listeners.TestNGListeners] - Test Case:  addingItemsToCartTest  - Skipped
+[ERROR] - [01-10-2025 09:39:14] [main] [com.swaglabs.Utils.ScreenshotUtil] - Failed to take screenshot: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+[INFO] - [01-10-2025 09:39:14] [main] [com.swaglabs.Utils.AllureUtil] - Logs attached to Allure report 
+[INFO] - [01-10-2025 09:39:14] [main] [com.swaglabs.Listeners.TestNGListeners] - Test Case:  checkoutItemTest  - Skipped
+[ERROR] - [01-10-2025 09:39:14] [main] [com.swaglabs.Utils.ScreenshotUtil] - Failed to take screenshot: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+[INFO] - [01-10-2025 09:39:14] [main] [com.swaglabs.Utils.AllureUtil] - Logs attached to Allure report 
+[INFO] - [01-10-2025 09:39:14] [main] [com.swaglabs.Listeners.TestNGListeners] - Test Case:  fillingInformationFormTest  - Skipped
+[ERROR] - [01-10-2025 09:39:14] [main] [com.swaglabs.Utils.ScreenshotUtil] - Failed to take screenshot: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+[INFO] - [01-10-2025 09:39:14] [main] [com.swaglabs.Utils.AllureUtil] - Logs attached to Allure report 
+[INFO] - [01-10-2025 09:39:14] [main] [com.swaglabs.Listeners.TestNGListeners] - Test Case:  finishCheckoutTest  - Skipped
+[INFO] - [01-10-2025 09:39:14] [main] [com.swaglabs.Listeners.TestNGListeners] - TestNG Execution Finished
+[INFO] - [01-10-2025 09:39:17] [main] [com.swaglabs.Utils.TerminalUtil] - Command executed successfully: C:\Users\Options\scoop\apps\allure\2.34.1\bin\allure.bat generate test-outputs/allure-results -o test-outputs/allure-report clean --single-file
+[INFO] - [01-10-2025 09:39:17] [main] [com.swaglabs.Utils.AllureUtil] - Allure report generated successfully on Windows.
+[ERROR] - [01-10-2025 09:39:17] [main] [com.swaglabs.Utils.FilesUtil] - Failed to rename file: index.html to Report_2025-10-01_09-39-17.html - Source 'test-outputs\allure-report\index.html' does not exist
+[INFO] - [01-10-2025 09:39:22] [main] [com.swaglabs.Utils.TerminalUtil] - Command executed successfully: cmd.exe /c start test-outputs/allure-report\Report_2025-10-01_09-39-17.html
